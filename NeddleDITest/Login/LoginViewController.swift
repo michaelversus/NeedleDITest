@@ -10,9 +10,48 @@ import UIKit
 final class LoginViewController: UIViewController {
     
     private let homeComponent: HomeComponentProtocol
+    private let accountProvider: UserAccountProviderProtocol
     
-    init(homeComponent: HomeComponentProtocol) {
+    private let usernameTextfield: UITextField = {
+        let tf = UITextField()
+        tf.adjustsFontSizeToFitWidth = true
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.layer.borderWidth = 2
+        tf.layer.borderColor = UIColor.black.cgColor
+        tf.layer.cornerRadius = 2
+        tf.layer.masksToBounds = true
+        return tf
+    }()
+    
+    private let passwordTextfield: UITextField = {
+        let tf = UITextField()
+        tf.adjustsFontSizeToFitWidth = true
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.isSecureTextEntry = true
+        tf.layer.borderWidth = 2
+        tf.layer.borderColor = UIColor.black.cgColor
+        tf.layer.cornerRadius = 2
+        tf.layer.masksToBounds = true
+        return tf
+    }()
+    
+    private let button: UIButton = {
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitleColor(.black, for: .normal)
+        btn.layer.borderWidth = 2
+        btn.layer.borderColor = UIColor.black.cgColor
+        btn.layer.cornerRadius = 2
+        btn.layer.masksToBounds = true
+        return btn
+    }()
+    
+    init(
+        homeComponent: HomeComponentProtocol,
+        accountProvider: UserAccountProviderProtocol
+    ) {
         self.homeComponent = homeComponent
+        self.accountProvider = accountProvider
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -22,5 +61,59 @@ final class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+        configureUI()
+    }
+}
+
+fileprivate extension LoginViewController {
+    
+    func setupUI() {
+        view.backgroundColor = .white
+        view.addSubview(usernameTextfield)
+        view.addSubview(passwordTextfield)
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            usernameTextfield.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            usernameTextfield.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            usernameTextfield.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
+        
+        NSLayoutConstraint.activate([
+            passwordTextfield.topAnchor.constraint(equalTo: usernameTextfield.bottomAnchor, constant: 20),
+            passwordTextfield.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            passwordTextfield.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
+        
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: passwordTextfield.bottomAnchor, constant: 20),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
+    }
+    
+    func configureUI() {
+        usernameTextfield.placeholder = "username"
+        passwordTextfield.placeholder = "password"
+        if let account = try? accountProvider.loadAccount() {
+            usernameTextfield.text = account.username
+            button.setTitle("Login", for: .normal)
+            button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        } else {
+            button.setTitle("Register", for: .normal)
+            button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
+        }
+    }
+    
+    @objc func handleLogin() {
+        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
+    }
+    
+    @objc func handleRegister() {
+        guard let username = usernameTextfield.text else { return }
+        guard let _ = passwordTextfield.text else { return }
+        try! accountProvider.save(UserAccount(username: username, shouldShowTutorial: true))
+        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
     }
 }

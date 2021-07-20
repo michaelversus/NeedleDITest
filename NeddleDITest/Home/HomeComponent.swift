@@ -12,11 +12,11 @@ protocol HomeComponentProtocol {
 }
 
 protocol HomeDependency: Dependency {
-    var account: UserAccount { get }
+    var accountProvider: UserAccountProvider { get }
 }
 
 final class HomeComponent: Component<HomeDependency>, HomeComponentProtocol {
     var homeViewController: HomeViewController {
-        return HomeViewController(account: dependency.account)
+        return HomeViewController(accountProvider: dependency.accountProvider)
     }
 }

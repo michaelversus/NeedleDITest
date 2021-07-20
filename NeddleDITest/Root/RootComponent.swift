@@ -16,10 +16,6 @@ final class RootComponent: BootstrapComponent {
         return shared { UserAccountProvider(userDefaults: userDefaults) }
     }
     
-    var account: UserAccount? {
-        return shared { try? accountProvider.loadAccount() }
-    }
-    
     var rootViewController: RootViewController {
         return RootViewController(
             accountProvider: accountProvider,

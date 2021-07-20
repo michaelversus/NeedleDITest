@@ -24,10 +24,10 @@ public func registerProviderFactories() {
         return EmptyDependencyProvider(component: component)
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->TutorialComponent->LoginComponent") { component in
-        return EmptyDependencyProvider(component: component)
+        return LoginDependency7d88cf85d3d03fb98d55Provider(component: component)
     }
     __DependencyProviderRegistry.instance.registerDependencyProviderFactory(for: "^->RootComponent->LoginComponent") { component in
-        return EmptyDependencyProvider(component: component)
+        return LoginDependency006c7d880fec28863ecaProvider(component: component)
     }
     
 }
@@ -35,8 +35,8 @@ public func registerProviderFactories() {
 // MARK: - Providers
 
 private class HomeDependencycad225e9266b3c9a56ddBaseProvider: HomeDependency {
-    var account: UserAccount {
-        return rootComponent.account
+    var accountProvider: UserAccountProvider {
+        return rootComponent.accountProvider
     }
     private let rootComponent: RootComponent
     init(rootComponent: RootComponent) {
@@ -59,5 +59,26 @@ private class HomeDependencyca04ec6c4183d82ec4bfProvider: HomeDependencycad225e9
 private class HomeDependency4a9921148535292cc850Provider: HomeDependencycad225e9266b3c9a56ddBaseProvider {
     init(component: NeedleFoundation.Scope) {
         super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+private class LoginDependency7d88cf85d3d03fb98d55BaseProvider: LoginDependency {
+    var accountProvider: UserAccountProvider {
+        return rootComponent.accountProvider
+    }
+    private let rootComponent: RootComponent
+    init(rootComponent: RootComponent) {
+        self.rootComponent = rootComponent
+    }
+}
+/// ^->RootComponent->TutorialComponent->LoginComponent
+private class LoginDependency7d88cf85d3d03fb98d55Provider: LoginDependency7d88cf85d3d03fb98d55BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent.parent as! RootComponent)
+    }
+}
+/// ^->RootComponent->LoginComponent
+private class LoginDependency006c7d880fec28863ecaProvider: LoginDependency7d88cf85d3d03fb98d55BaseProvider {
+    init(component: NeedleFoundation.Scope) {
+        super.init(rootComponent: component.parent as! RootComponent)
     }
 }

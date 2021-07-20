@@ -9,10 +9,16 @@ import UIKit
 
 final class HomeViewController: UIViewController {
     
-    private let account: UserAccount
+    private let accountProvider: UserAccountProviderProtocol
     
-    init(account: UserAccount) {
-        self.account = account
+    private let label: UILabel = {
+        let lbl = UILabel()
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
+    }()
+    
+    required init(accountProvider: UserAccountProviderProtocol) {
+        self.accountProvider = accountProvider
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -22,5 +28,29 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupUI()
+        configureUI()
+    }
+}
+
+fileprivate extension HomeViewController {
+    func setupUI() {
+        view.backgroundColor = .white
+        view.addSubview(label)
+        
+        NSLayoutConstraint.activate([
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
+    }
+    
+    func configureUI() {
+        if let account = try? accountProvider.loadAccount() {
+            label.text = "Welcome \(account.username)"
+        } else {
+            label.text = "Something went wrong"
+        }
     }
 }

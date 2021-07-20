@@ -29,7 +29,8 @@ final class UserAccountProvider: UserAccountProviderProtocol {
 }
 
 struct UserAccount: Codable {
-    let name: String
+    let username: String
+    let shouldShowTutorial: Bool
 }
 
 extension UserAccount {

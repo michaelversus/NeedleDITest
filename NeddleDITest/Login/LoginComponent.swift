@@ -11,10 +11,15 @@ protocol LoginComponentProtocol {
     var loginViewController: LoginViewController { get }
 }
 
-final class LoginComponent: Component<EmptyDependency>, LoginComponentProtocol {
+protocol LoginDependency: Dependency {
+    var accountProvider: UserAccountProvider { get }
+}
+
+final class LoginComponent: Component<LoginDependency>, LoginComponentProtocol {
     var loginViewController: LoginViewController {
         return LoginViewController(
-            homeComponent: homeComponent
+            homeComponent: homeComponent,
+            accountProvider: dependency.accountProvider
         )
     }
     
