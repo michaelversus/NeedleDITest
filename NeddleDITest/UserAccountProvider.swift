@@ -10,6 +10,7 @@ import Foundation
 protocol UserAccountProviderProtocol {
     func save(_ account: UserAccount) throws
     func loadAccount() throws -> UserAccount?
+    func reset()
 }
 
 final class UserAccountProvider: UserAccountProviderProtocol {
@@ -25,6 +26,10 @@ final class UserAccountProvider: UserAccountProviderProtocol {
     
     func loadAccount() throws -> UserAccount? {
         return try self.userDefaults.object(UserAccount.self, with: UserAccount.key)
+    }
+    
+    func reset() {
+        userDefaults.set(nil, forKey: UserAccount.key)
     }
 }
 

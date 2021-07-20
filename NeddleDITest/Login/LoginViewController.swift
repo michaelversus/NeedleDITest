@@ -16,6 +16,9 @@ final class LoginViewController: UIViewController {
         let tf = UITextField()
         tf.adjustsFontSizeToFitWidth = true
         tf.translatesAutoresizingMaskIntoConstraints = false
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: tf.frame.height))
+        tf.leftView = paddingView
+        tf.leftViewMode = .always
         tf.layer.borderWidth = 2
         tf.layer.borderColor = UIColor.black.cgColor
         tf.layer.cornerRadius = 2
@@ -28,6 +31,9 @@ final class LoginViewController: UIViewController {
         tf.adjustsFontSizeToFitWidth = true
         tf.translatesAutoresizingMaskIntoConstraints = false
         tf.isSecureTextEntry = true
+        let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: tf.frame.height))
+        tf.leftView = paddingView
+        tf.leftViewMode = .always
         tf.layer.borderWidth = 2
         tf.layer.borderColor = UIColor.black.cgColor
         tf.layer.cornerRadius = 2
@@ -90,6 +96,11 @@ fileprivate extension LoginViewController {
             button.topAnchor.constraint(equalTo: passwordTextfield.bottomAnchor, constant: 20),
             button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+        ])
+        
+        NSLayoutConstraint.activate([
+            usernameTextfield.heightAnchor.constraint(equalTo: button.heightAnchor),
+            passwordTextfield.heightAnchor.constraint(equalTo: button.heightAnchor)
         ])
     }
     

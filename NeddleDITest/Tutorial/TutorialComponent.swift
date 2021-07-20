@@ -11,14 +11,19 @@ protocol TutorialComponentProtocol {
     var tutorialViewController: TutorialViewController { get }
 }
 
-final class TutorialComponent: Component<EmptyDependency>, TutorialComponentProtocol {
+protocol TutorialDependency: Dependency {
+    var accountProvider: UserAccountProvider { get }
+}
+
+final class TutorialComponent: Component<TutorialDependency>, TutorialComponentProtocol {
     var tutorialViewController: TutorialViewController {
         return TutorialViewController(
-            loginComponent: loginComponent
+            homeComponent: homeComponent,
+            accountProvider: dependency.accountProvider
         )
     }
     
-    var loginComponent: LoginComponent {
-        return LoginComponent(parent: self)
+    var homeComponent: HomeComponent {
+        return HomeComponent(parent: self)
     }
 }

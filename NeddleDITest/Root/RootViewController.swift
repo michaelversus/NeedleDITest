@@ -52,6 +52,10 @@ final class RootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         configureUI()
     }
 }
@@ -94,14 +98,14 @@ fileprivate extension RootViewController {
     }
     
     @objc func goToTutorial() {
-        navigationController?.present(tutorialComponent.tutorialViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(tutorialComponent.tutorialViewController, animated: true)
     }
     
     @objc func goToHome() {
-        navigationController?.present(homeComponent.homeViewController, animated: true, completion: nil)
+        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
     }
     
     @objc func goToLogin() {
-        navigationController?.present(loginComponent.loginViewController, animated: false, completion: nil)
+        navigationController?.pushViewController(loginComponent.loginViewController, animated: false)
     }
 }

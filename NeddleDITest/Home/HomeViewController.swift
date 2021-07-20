@@ -14,6 +14,7 @@ final class HomeViewController: UIViewController {
     private let label: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
+        lbl.textAlignment = .center
         return lbl
     }()
     
@@ -28,7 +29,6 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupUI()
         configureUI()
     }
@@ -38,7 +38,13 @@ fileprivate extension HomeViewController {
     func setupUI() {
         view.backgroundColor = .white
         view.addSubview(label)
-        
+        navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Logout",
+            style: .plain,
+            target: self,
+            action: #selector(logout)
+        )
         NSLayoutConstraint.activate([
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
@@ -52,5 +58,10 @@ fileprivate extension HomeViewController {
         } else {
             label.text = "Something went wrong"
         }
+    }
+    
+    @objc func logout() {
+        accountProvider.reset()
+        navigationController?.popToRootViewController(animated: true)
     }
 }
