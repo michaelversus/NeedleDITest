@@ -1,0 +1,6 @@
+framework module Pods_NeddleDITest_NeddleDITestUITests {
+  umbrella header "Pods-NeddleDITest-NeddleDITestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

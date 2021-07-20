@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		351276E17DD1D44DAB5F4DA2 /* Pods_NeddleDITest_NeddleDITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FA5C0AC501B163DF6F3E6D /* Pods_NeddleDITest_NeddleDITestUITests.framework */; };
+		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
+		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
+		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
+		589C026F26A5E38200466D2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589C026D26A5E38200466D2E /* LaunchScreen.storyboard */; };
+		589C027A26A5E38200466D2E /* NeddleDITestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C027926A5E38200466D2E /* NeddleDITestTests.swift */; };
+		589C028526A5E38200466D2E /* NeddleDITestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C028426A5E38200466D2E /* NeddleDITestUITests.swift */; };
+		589C02B426A5E91A00466D2E /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02B326A5E91A00466D2E /* NeedleGenerated.swift */; };
+		589C02B926A5E99700466D2E /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02B826A5E99700466D2E /* RootComponent.swift */; };
+		589C02C826A5EAF800466D2E /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02C726A5EAF800466D2E /* RootViewController.swift */; };
+		589C02CE26A5ECF500466D2E /* TutorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02CD26A5ECF500466D2E /* TutorialComponent.swift */; };
+		589C02D626A5ED3F00466D2E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02D526A5ED3F00466D2E /* TutorialViewController.swift */; };
+		589C02DD26A5EE5F00466D2E /* LoginComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02DC26A5EE5F00466D2E /* LoginComponent.swift */; };
+		589C02E526A5EE6C00466D2E /* HomeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02E426A5EE6C00466D2E /* HomeComponent.swift */; };
+		589C02EA26A5EEAA00466D2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02E926A5EEAA00466D2E /* LoginViewController.swift */; };
+		589C02EF26A5EED000466D2E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02EE26A5EED000466D2E /* HomeViewController.swift */; };
+		589C02F426A5F5AA00466D2E /* UserAccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02F326A5F5AA00466D2E /* UserAccountProvider.swift */; };
+		589C02FA26A5F87200466D2E /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C02F926A5F87200466D2E /* UserDefaults+Extension.swift */; };
+		D7108AEDF76B1248C4F7F0E7 /* Pods_NeddleDITest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C38D140B29AB6641719DCAB /* Pods_NeddleDITest.framework */; };
+		E761700B84C001C9F10B595B /* Pods_NeddleDITestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5E4115041C09C0CB49F221 /* Pods_NeddleDITestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		589C027626A5E38200466D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589C025E26A5E38100466D2E;
+			remoteInfo = NeddleDITest;
+		};
+		589C028126A5E38200466D2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589C025E26A5E38100466D2E;
+			remoteInfo = NeddleDITest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E3E1C19796EF0A245AC9315 /* Pods-NeddleDITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITestTests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITestTests/Pods-NeddleDITestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		481DD546178F2AC2A6A8AE6C /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig"; path = "Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		589C026B26A5E38200466D2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		589C026E26A5E38200466D2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		589C027026A5E38200466D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589C027526A5E38200466D2E /* NeddleDITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeddleDITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589C027926A5E38200466D2E /* NeddleDITestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeddleDITestTests.swift; sourceTree = "<group>"; };
+		589C027B26A5E38200466D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589C028026A5E38200466D2E /* NeddleDITestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeddleDITestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		589C028426A5E38200466D2E /* NeddleDITestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeddleDITestUITests.swift; sourceTree = "<group>"; };
+		589C028626A5E38200466D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589C02B326A5E91A00466D2E /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		589C02B826A5E99700466D2E /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		589C02C726A5EAF800466D2E /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		589C02CD26A5ECF500466D2E /* TutorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialComponent.swift; sourceTree = "<group>"; };
+		589C02D526A5ED3F00466D2E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		589C02DC26A5EE5F00466D2E /* LoginComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginComponent.swift; sourceTree = "<group>"; };
+		589C02E426A5EE6C00466D2E /* HomeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComponent.swift; sourceTree = "<group>"; };
+		589C02E926A5EEAA00466D2E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		589C02EE26A5EED000466D2E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		589C02F326A5F5AA00466D2E /* UserAccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountProvider.swift; sourceTree = "<group>"; };
+		589C02F926A5F87200466D2E /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		58FA5C0AC501B163DF6F3E6D /* Pods_NeddleDITest_NeddleDITestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITest_NeddleDITestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BDBF36B87B30D36783D4FA /* Pods-NeddleDITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITest/Pods-NeddleDITest.debug.xcconfig"; sourceTree = "<group>"; };
+		8C38D140B29AB6641719DCAB /* Pods_NeddleDITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E02689F87E53C516945EA7 /* Pods-NeddleDITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest.release.xcconfig"; path = "Target Support Files/Pods-NeddleDITest/Pods-NeddleDITest.release.xcconfig"; sourceTree = "<group>"; };
+		C304323588949AC577FBA845 /* Pods-NeddleDITestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITestTests.release.xcconfig"; path = "Target Support Files/Pods-NeddleDITestTests/Pods-NeddleDITestTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE5E4115041C09C0CB49F221 /* Pods_NeddleDITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		589C025C26A5E38100466D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7108AEDF76B1248C4F7F0E7 /* Pods_NeddleDITest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027226A5E38200466D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E761700B84C001C9F10B595B /* Pods_NeddleDITestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027D26A5E38200466D2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				351276E17DD1D44DAB5F4DA2 /* Pods_NeddleDITest_NeddleDITestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		589C025626A5E38100466D2E = {
+			isa = PBXGroup;
+			children = (
+				589C026126A5E38100466D2E /* NeddleDITest */,
+				589C027826A5E38200466D2E /* NeddleDITestTests */,
+				589C028326A5E38200466D2E /* NeddleDITestUITests */,
+				589C026026A5E38100466D2E /* Products */,
+				F671C16FB8FAEF28DF2C25B9 /* Pods */,
+				E2737F4D7FE7EBD91E302633 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		589C026026A5E38100466D2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589C025F26A5E38100466D2E /* NeddleDITest.app */,
+				589C027526A5E38200466D2E /* NeddleDITestTests.xctest */,
+				589C028026A5E38200466D2E /* NeddleDITestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		589C026126A5E38100466D2E /* NeddleDITest */ = {
+			isa = PBXGroup;
+			children = (
+				589C02B326A5E91A00466D2E /* NeedleGenerated.swift */,
+				589C026226A5E38100466D2E /* AppDelegate.swift */,
+				589C026426A5E38100466D2E /* SceneDelegate.swift */,
+				589C02F326A5F5AA00466D2E /* UserAccountProvider.swift */,
+				589C02F826A5F85B00466D2E /* Extensions */,
+				589C02DB26A5EE5000466D2E /* Home */,
+				589C02DA26A5EE4A00466D2E /* Login */,
+				589C02CC26A5ECE000466D2E /* Tutorial */,
+				589C02C326A5EAE900466D2E /* Root */,
+				589C026B26A5E38200466D2E /* Assets.xcassets */,
+				589C026D26A5E38200466D2E /* LaunchScreen.storyboard */,
+				589C027026A5E38200466D2E /* Info.plist */,
+			);
+			path = NeddleDITest;
+			sourceTree = "<group>";
+		};
+		589C027826A5E38200466D2E /* NeddleDITestTests */ = {
+			isa = PBXGroup;
+			children = (
+				589C027926A5E38200466D2E /* NeddleDITestTests.swift */,
+				589C027B26A5E38200466D2E /* Info.plist */,
+			);
+			path = NeddleDITestTests;
+			sourceTree = "<group>";
+		};
+		589C028326A5E38200466D2E /* NeddleDITestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				589C028426A5E38200466D2E /* NeddleDITestUITests.swift */,
+				589C028626A5E38200466D2E /* Info.plist */,
+			);
+			path = NeddleDITestUITests;
+			sourceTree = "<group>";
+		};
+		589C02C326A5EAE900466D2E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				589C02B826A5E99700466D2E /* RootComponent.swift */,
+				589C02C726A5EAF800466D2E /* RootViewController.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		589C02CC26A5ECE000466D2E /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				589C02CD26A5ECF500466D2E /* TutorialComponent.swift */,
+				589C02D526A5ED3F00466D2E /* TutorialViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
+		589C02DA26A5EE4A00466D2E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				589C02DC26A5EE5F00466D2E /* LoginComponent.swift */,
+				589C02E926A5EEAA00466D2E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		589C02DB26A5EE5000466D2E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				589C02E426A5EE6C00466D2E /* HomeComponent.swift */,
+				589C02EE26A5EED000466D2E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		589C02F826A5F85B00466D2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				589C02F926A5F87200466D2E /* UserDefaults+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2737F4D7FE7EBD91E302633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C38D140B29AB6641719DCAB /* Pods_NeddleDITest.framework */,
+				58FA5C0AC501B163DF6F3E6D /* Pods_NeddleDITest_NeddleDITestUITests.framework */,
+				EE5E4115041C09C0CB49F221 /* Pods_NeddleDITestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F671C16FB8FAEF28DF2C25B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82BDBF36B87B30D36783D4FA /* Pods-NeddleDITest.debug.xcconfig */,
+				A2E02689F87E53C516945EA7 /* Pods-NeddleDITest.release.xcconfig */,
+				1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */,
+				481DD546178F2AC2A6A8AE6C /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */,
+				3E3E1C19796EF0A245AC9315 /* Pods-NeddleDITestTests.debug.xcconfig */,
+				C304323588949AC577FBA845 /* Pods-NeddleDITestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		589C025E26A5E38100466D2E /* NeddleDITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589C028926A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITest" */;
+			buildPhases = (
+				589C029C26A5E5BF00466D2E /* ShellScript */,
+				581B1166F4CF1FBE586141B8 /* [CP] Check Pods Manifest.lock */,
+				589C025B26A5E38100466D2E /* Sources */,
+				589C025C26A5E38100466D2E /* Frameworks */,
+				589C025D26A5E38100466D2E /* Resources */,
+				EA58863328B7B20D30FC219E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeddleDITest;
+			productName = NeddleDITest;
+			productReference = 589C025F26A5E38100466D2E /* NeddleDITest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		589C027426A5E38200466D2E /* NeddleDITestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589C028C26A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITestTests" */;
+			buildPhases = (
+				BA1DD65CDC76177D5FCCC286 /* [CP] Check Pods Manifest.lock */,
+				589C027126A5E38200466D2E /* Sources */,
+				589C027226A5E38200466D2E /* Frameworks */,
+				589C027326A5E38200466D2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589C027726A5E38200466D2E /* PBXTargetDependency */,
+			);
+			name = NeddleDITestTests;
+			productName = NeddleDITestTests;
+			productReference = 589C027526A5E38200466D2E /* NeddleDITestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		589C027F26A5E38200466D2E /* NeddleDITestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589C028F26A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITestUITests" */;
+			buildPhases = (
+				57B4A4AB21E389DBBA5CA97C /* [CP] Check Pods Manifest.lock */,
+				589C027C26A5E38200466D2E /* Sources */,
+				589C027D26A5E38200466D2E /* Frameworks */,
+				589C027E26A5E38200466D2E /* Resources */,
+				091D7844C3D5DC0267C9BC75 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589C028226A5E38200466D2E /* PBXTargetDependency */,
+			);
+			name = NeddleDITestUITests;
+			productName = NeddleDITestUITests;
+			productReference = 589C028026A5E38200466D2E /* NeddleDITestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		589C025726A5E38100466D2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					589C025E26A5E38100466D2E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					589C027426A5E38200466D2E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 589C025E26A5E38100466D2E;
+					};
+					589C027F26A5E38200466D2E = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 589C025E26A5E38100466D2E;
+					};
+				};
+			};
+			buildConfigurationList = 589C025A26A5E38100466D2E /* Build configuration list for PBXProject "NeddleDITest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 589C025626A5E38100466D2E;
+			productRefGroup = 589C026026A5E38100466D2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				589C025E26A5E38100466D2E /* NeddleDITest */,
+				589C027426A5E38200466D2E /* NeddleDITestTests */,
+				589C027F26A5E38200466D2E /* NeddleDITestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589C025D26A5E38100466D2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589C026F26A5E38200466D2E /* LaunchScreen.storyboard in Resources */,
+				589C026C26A5E38200466D2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027326A5E38200466D2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027E26A5E38200466D2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091D7844C3D5DC0267C9BC75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57B4A4AB21E389DBBA5CA97C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeddleDITest-NeddleDITestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		581B1166F4CF1FBE586141B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeddleDITest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		589C029C26A5E5BF00466D2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SOURCEKIT_LOGGING=0 && /usr/local/Cellar/needle/0.17.2/bin/needle generate $SRCROOT/$TARGETNAME/NeedleGenerated.swift $SRCROOT/$TARGETNAME\n";
+		};
+		BA1DD65CDC76177D5FCCC286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NeddleDITestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA58863328B7B20D30FC219E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest/Pods-NeddleDITest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest/Pods-NeddleDITest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NeddleDITest/Pods-NeddleDITest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		589C025B26A5E38100466D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589C02C826A5EAF800466D2E /* RootViewController.swift in Sources */,
+				589C02E526A5EE6C00466D2E /* HomeComponent.swift in Sources */,
+				589C02D626A5ED3F00466D2E /* TutorialViewController.swift in Sources */,
+				589C02F426A5F5AA00466D2E /* UserAccountProvider.swift in Sources */,
+				589C02B426A5E91A00466D2E /* NeedleGenerated.swift in Sources */,
+				589C02DD26A5EE5F00466D2E /* LoginComponent.swift in Sources */,
+				589C026326A5E38100466D2E /* AppDelegate.swift in Sources */,
+				589C02B926A5E99700466D2E /* RootComponent.swift in Sources */,
+				589C02EF26A5EED000466D2E /* HomeViewController.swift in Sources */,
+				589C02FA26A5F87200466D2E /* UserDefaults+Extension.swift in Sources */,
+				589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */,
+				589C02EA26A5EEAA00466D2E /* LoginViewController.swift in Sources */,
+				589C02CE26A5ECF500466D2E /* TutorialComponent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027126A5E38200466D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589C027A26A5E38200466D2E /* NeddleDITestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		589C027C26A5E38200466D2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589C028526A5E38200466D2E /* NeddleDITestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589C027726A5E38200466D2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589C025E26A5E38100466D2E /* NeddleDITest */;
+			targetProxy = 589C027626A5E38200466D2E /* PBXContainerItemProxy */;
+		};
+		589C028226A5E38200466D2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589C025E26A5E38100466D2E /* NeddleDITest */;
+			targetProxy = 589C028126A5E38200466D2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		589C026D26A5E38200466D2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589C026E26A5E38200466D2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		589C028726A5E38200466D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		589C028826A5E38200466D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		589C028A26A5E38200466D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BDBF36B87B30D36783D4FA /* Pods-NeddleDITest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		589C028B26A5E38200466D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E02689F87E53C516945EA7 /* Pods-NeddleDITest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		589C028D26A5E38200466D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3E1C19796EF0A245AC9315 /* Pods-NeddleDITestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Debug;
+		};
+		589C028E26A5E38200466D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C304323588949AC577FBA845 /* Pods-NeddleDITestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Release;
+		};
+		589C029026A5E38200466D2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeddleDITest;
+			};
+			name = Debug;
+		};
+		589C029126A5E38200466D2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481DD546178F2AC2A6A8AE6C /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = NeddleDITestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.NeddleDITestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NeddleDITest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		589C025A26A5E38100466D2E /* Build configuration list for PBXProject "NeddleDITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589C028726A5E38200466D2E /* Debug */,
+				589C028826A5E38200466D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589C028926A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589C028A26A5E38200466D2E /* Debug */,
+				589C028B26A5E38200466D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589C028C26A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589C028D26A5E38200466D2E /* Debug */,
+				589C028E26A5E38200466D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		589C028F26A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589C029026A5E38200466D2E /* Debug */,
+				589C029126A5E38200466D2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 589C025726A5E38100466D2E /* Project object */;
+}
