@@ -8,7 +8,7 @@
 import NeedleFoundation
 
 protocol LoginComponentProtocol {
-    var loginViewController: LoginViewController { get }
+    var loginViewController: UIViewController { get }
 }
 
 protocol LoginDependency: Dependency {
@@ -16,7 +16,7 @@ protocol LoginDependency: Dependency {
 }
 
 final class LoginComponent: Component<LoginDependency>, LoginComponentProtocol {
-    var loginViewController: LoginViewController {
+    var loginViewController: UIViewController {
         return LoginViewController(
             homeComponent: homeComponent,
             accountProvider: dependency.accountProvider

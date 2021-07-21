@@ -16,12 +16,16 @@ final class RootComponent: BootstrapComponent {
         return shared { UserAccountProvider(userDefaults: userDefaults) }
     }
     
+    var rootPresenter: RootPresenterProtocol {
+        return RootPresenter(accountProvider: accountProvider)
+    }
+    
     var rootViewController: RootViewController {
         return RootViewController(
-            accountProvider: accountProvider,
             tutorialComponent: tutorialComponent,
             loginComponent: loginComponent,
-            homeComponent: homeComponent
+            homeComponent: homeComponent,
+            presenter: rootPresenter
         )
     }
     

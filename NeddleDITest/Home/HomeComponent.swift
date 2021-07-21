@@ -8,7 +8,7 @@
 import NeedleFoundation
 
 protocol HomeComponentProtocol {
-    var homeViewController: HomeViewController { get }
+    var homeViewController: UIViewController { get }
 }
 
 protocol HomeDependency: Dependency {
@@ -16,7 +16,7 @@ protocol HomeDependency: Dependency {
 }
 
 final class HomeComponent: Component<HomeDependency>, HomeComponentProtocol {
-    var homeViewController: HomeViewController {
+    var homeViewController: UIViewController {
         return HomeViewController(accountProvider: dependency.accountProvider)
     }
 }

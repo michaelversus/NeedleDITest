@@ -13,32 +13,33 @@ class RootViewControllerTests: XCTestCase {
     private var rootViewController: RootViewController!
     private var accountProvider: MockUserAccountProvider!
     private var tutorialComponent: MockTutorialComponent!
+    private var loginComponent: MockLoginComponent!
+    private var homeComponent: MockHomeComponent!
 
     override func setUpWithError() throws {
         accountProvider = MockUserAccountProvider()
         tutorialComponent = MockTutorialComponent()
+        loginComponent = MockLoginComponent()
+        homeComponent = MockHomeComponent()
         rootViewController = RootViewController(
             accountProvider: accountProvider,
             tutorialComponent: tutorialComponent,
-            loginComponent: <#T##LoginComponentProtocol#>,
-            homeComponent: <#T##HomeComponentProtocol#>
+            loginComponent: loginComponent,
+            homeComponent: homeComponent
         )
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_viewDidLoad_givenNilAccount_setupsLoginUI() {
+        // Given
+        accountProvider.account = nil
+        
+        // When
+        rootViewController.viewDidLoad()
+        
+        // Then
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

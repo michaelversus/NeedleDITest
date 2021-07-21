@@ -11,6 +11,9 @@
 		580E4E5C26A756870066F7C8 /* RootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */; };
 		580E4E6226A757880066F7C8 /* MockUserAccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */; };
 		580E4E6A26A758790066F7C8 /* MockTutorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */; };
+		580E4E6F26A846920066F7C8 /* MockLoginComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E6E26A846920066F7C8 /* MockLoginComponent.swift */; };
+		580E4E7426A846F00066F7C8 /* MockHomeComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E7326A846F00066F7C8 /* MockHomeComponent.swift */; };
+		580E4E8226A84AF10066F7C8 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E8126A84AF10066F7C8 /* RootPresenter.swift */; };
 		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
 		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
 		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerTests.swift; sourceTree = "<group>"; };
 		580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserAccountProvider.swift; sourceTree = "<group>"; };
 		580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTutorialComponent.swift; sourceTree = "<group>"; };
+		580E4E6E26A846920066F7C8 /* MockLoginComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginComponent.swift; sourceTree = "<group>"; };
+		580E4E7326A846F00066F7C8 /* MockHomeComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeComponent.swift; sourceTree = "<group>"; };
+		580E4E8126A84AF10066F7C8 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 			children = (
 				580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */,
 				580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */,
+				580E4E6E26A846920066F7C8 /* MockLoginComponent.swift */,
+				580E4E7326A846F00066F7C8 /* MockHomeComponent.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				589C02B826A5E99700466D2E /* RootComponent.swift */,
+				580E4E8126A84AF10066F7C8 /* RootPresenter.swift */,
 				589C02C726A5EAF800466D2E /* RootViewController.swift */,
 			);
 			path = Root;
@@ -513,6 +522,7 @@
 				589C02F426A5F5AA00466D2E /* UserAccountProvider.swift in Sources */,
 				589C02B426A5E91A00466D2E /* NeedleGenerated.swift in Sources */,
 				589C02DD26A5EE5F00466D2E /* LoginComponent.swift in Sources */,
+				580E4E8226A84AF10066F7C8 /* RootPresenter.swift in Sources */,
 				589C026326A5E38100466D2E /* AppDelegate.swift in Sources */,
 				589C02B926A5E99700466D2E /* RootComponent.swift in Sources */,
 				589C02EF26A5EED000466D2E /* HomeViewController.swift in Sources */,
@@ -529,7 +539,9 @@
 			files = (
 				580E4E5C26A756870066F7C8 /* RootViewControllerTests.swift in Sources */,
 				580E4E6226A757880066F7C8 /* MockUserAccountProvider.swift in Sources */,
+				580E4E6F26A846920066F7C8 /* MockLoginComponent.swift in Sources */,
 				589C027A26A5E38200466D2E /* NeddleDITestTests.swift in Sources */,
+				580E4E7426A846F00066F7C8 /* MockHomeComponent.swift in Sources */,
 				580E4E6A26A758790066F7C8 /* MockTutorialComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

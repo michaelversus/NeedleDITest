@@ -7,12 +7,20 @@
 
 import UIKit
 
+protocol RootViewControllerProtocol: AnyObject {
+    func configureLabel(text: String)
+    func configureButton(title: String)
+    func goToLogin()
+    func goToHome()
+    func goToTutorial()
+}
+
 final class RootViewController: UIViewController {
     
     private let tutorialComponent: TutorialComponentProtocol
     private let loginComponent: LoginComponentProtocol
     private let homeComponent: HomeComponentProtocol
-    private let accountProvider: UserAccountProviderProtocol
+    private let presenter: RootPresenterProtocol
     
     private let initialLabel: UILabel = {
         let lbl = UILabel()
@@ -21,7 +29,7 @@ final class RootViewController: UIViewController {
         return lbl
     }()
     
-    private let button: UIButton = {
+    private lazy var button: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitleColor(.black, for: .normal)
@@ -29,19 +37,24 @@ final class RootViewController: UIViewController {
         btn.layer.borderColor = UIColor.black.cgColor
         btn.layer.cornerRadius = 2
         btn.layer.masksToBounds = true
+        btn.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
         return btn
     }()
     
+    @objc func handleButtonTapped() {
+        presenter.buttonTapped()
+    }
+    
     init(
-        accountProvider: UserAccountProviderProtocol,
         tutorialComponent: TutorialComponentProtocol,
         loginComponent: LoginComponentProtocol,
-        homeComponent: HomeComponentProtocol
+        homeComponent: HomeComponentProtocol,
+        presenter: RootPresenterProtocol
     ) {
         self.tutorialComponent = tutorialComponent
         self.loginComponent = loginComponent
         self.homeComponent = homeComponent
-        self.accountProvider = accountProvider
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -51,12 +64,35 @@ final class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.initialLoad()
         setupUI()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        configureUI()
+        presenter.load()
+    }
+}
+
+extension RootViewController: RootViewControllerProtocol {
+    func configureLabel(text: String) {
+        initialLabel.text = text
+    }
+    
+    func configureButton(title: String) {
+        
+    }
+    
+    func goToTutorial() {
+        navigationController?.pushViewController(tutorialComponent.tutorialViewController, animated: true)
+    }
+    
+    func goToHome() {
+        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
+    }
+    
+    func goToLogin() {
+        navigationController?.pushViewController(loginComponent.loginViewController, animated: false)
     }
 }
 
@@ -80,32 +116,20 @@ fileprivate extension RootViewController {
         ])
     }
     
-    func configureUI() {
-        initialLabel.text = "Initial Screen"
-        
-        if let account = try? accountProvider.loadAccount() {
-            if account.shouldShowTutorial {
-                button.setTitle("Tutorial", for: .normal)
-                button.addTarget(self, action: #selector(goToTutorial), for: .touchUpInside)
-            } else {
-                button.setTitle("Home", for: .normal)
-                button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
-            }
-        } else {
-            button.setTitle("Login", for: .normal)
-            button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
-        }
-    }
-    
-    @objc func goToTutorial() {
-        navigationController?.pushViewController(tutorialComponent.tutorialViewController, animated: true)
-    }
-    
-    @objc func goToHome() {
-        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
-    }
-    
-    @objc func goToLogin() {
-        navigationController?.pushViewController(loginComponent.loginViewController, animated: false)
-    }
+//    func configureUI() {
+//        initialLabel.text = "Initial Screen"
+//
+//        if let account = try? accountProvider.loadAccount() {
+//            if account.shouldShowTutorial {
+//                button.setTitle("Tutorial", for: .normal)
+//                button.addTarget(self, action: #selector(goToTutorial), for: .touchUpInside)
+//            } else {
+//                button.setTitle("Home", for: .normal)
+//                button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
+//            }
+//        } else {
+//            button.setTitle("Login", for: .normal)
+//            button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
+//        }
+//    }
 }
