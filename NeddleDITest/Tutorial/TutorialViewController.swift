@@ -7,10 +7,16 @@
 
 import UIKit
 
+protocol TutorialViewControllerProtocol: AnyObject {
+    func configureLabel(text: String)
+    func configureButton(title: String)
+    func goToHome()
+}
+
 final class TutorialViewController: UIViewController {
     
     private let homeComponent: HomeComponentProtocol
-    private let accountProvider: UserAccountProviderProtocol
+    private let presenter: TutorialPresenterProtocol
     
     private let label: UILabel = {
         let lbl = UILabel()
@@ -19,7 +25,7 @@ final class TutorialViewController: UIViewController {
         return lbl
     }()
     
-    private let button: UIButton = {
+    private lazy var button: UIButton = {
         let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitleColor(.black, for: .normal)
@@ -27,15 +33,20 @@ final class TutorialViewController: UIViewController {
         btn.layer.borderColor = UIColor.black.cgColor
         btn.layer.cornerRadius = 2
         btn.layer.masksToBounds = true
+        btn.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
         return btn
     }()
     
+    @objc func handleButtonTapped() {
+        presenter.buttonTapped()
+    }
+    
     init(
         homeComponent: HomeComponentProtocol,
-        accountProvider: UserAccountProviderProtocol
+        presenter: TutorialPresenterProtocol
     ) {
         self.homeComponent = homeComponent
-        self.accountProvider = accountProvider
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -45,8 +56,23 @@ final class TutorialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.attach(self)
+        presenter.initialLoad()
         setupUI()
-        configureUI()
+    }
+}
+
+extension TutorialViewController: TutorialViewControllerProtocol {
+    func configureLabel(text: String) {
+        label.text = text
+    }
+    
+    func configureButton(title: String) {
+        button.setTitle(title, for: .normal)
+    }
+    
+    func goToHome() {
+        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
     }
 }
 
@@ -65,18 +91,5 @@ fileprivate extension TutorialViewController {
             button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
-    }
-    
-    func configureUI() {
-        label.text = "Tutorial screen!"
-        button.setTitle("Go to home", for: .normal)
-        button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
-    }
-    
-    @objc func goToHome() {
-        guard let account = try? accountProvider.loadAccount() else { return }
-        let newAccount = UserAccount(username: account.username, shouldShowTutorial: false)
-        try! accountProvider.save(newAccount)
-        navigationController?.pushViewController(homeComponent.homeViewController, animated: true)
     }
 }

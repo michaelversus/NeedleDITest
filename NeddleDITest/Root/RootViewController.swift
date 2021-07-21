@@ -64,6 +64,7 @@ final class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.attach(self)
         presenter.initialLoad()
         setupUI()
     }
@@ -80,7 +81,7 @@ extension RootViewController: RootViewControllerProtocol {
     }
     
     func configureButton(title: String) {
-        
+        button.setTitle(title, for: .normal)
     }
     
     func goToTutorial() {
@@ -115,21 +116,4 @@ fileprivate extension RootViewController {
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
     }
-    
-//    func configureUI() {
-//        initialLabel.text = "Initial Screen"
-//
-//        if let account = try? accountProvider.loadAccount() {
-//            if account.shouldShowTutorial {
-//                button.setTitle("Tutorial", for: .normal)
-//                button.addTarget(self, action: #selector(goToTutorial), for: .touchUpInside)
-//            } else {
-//                button.setTitle("Home", for: .normal)
-//                button.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
-//            }
-//        } else {
-//            button.setTitle("Login", for: .normal)
-//            button.addTarget(self, action: #selector(goToLogin), for: .touchUpInside)
-//        }
-//    }
 }

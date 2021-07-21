@@ -16,10 +16,14 @@ protocol TutorialDependency: Dependency {
 }
 
 final class TutorialComponent: Component<TutorialDependency>, TutorialComponentProtocol {
+    var tutorialPresenter: TutorialPresenterProtocol {
+        return TutorialPresenter(accountProvider: dependency.accountProvider)
+    }
+    
     var tutorialViewController: UIViewController {
         return TutorialViewController(
             homeComponent: homeComponent,
-            accountProvider: dependency.accountProvider
+            presenter: tutorialPresenter
         )
     }
     
