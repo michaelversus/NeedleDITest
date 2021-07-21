@@ -16,10 +16,14 @@ protocol LoginDependency: Dependency {
 }
 
 final class LoginComponent: Component<LoginDependency>, LoginComponentProtocol {
+    var loginPresenter: LoginPresenterProtocol {
+        return LoginPresenter(accountProvider: dependency.accountProvider)
+    }
+    
     var loginViewController: UIViewController {
         return LoginViewController(
             homeComponent: homeComponent,
-            accountProvider: dependency.accountProvider
+            presenter: loginPresenter
         )
     }
     
