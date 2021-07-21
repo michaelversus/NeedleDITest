@@ -17,6 +17,7 @@
 		5877734426A852EE005AB9AA /* TutorialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734326A852EE005AB9AA /* TutorialPresenter.swift */; };
 		5877734926A85839005AB9AA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734826A85839005AB9AA /* LoginPresenter.swift */; };
 		5877734E26A85F76005AB9AA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734D26A85F76005AB9AA /* HomePresenter.swift */; };
+		5877736226A8636C005AB9AA /* MockRootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877736126A8636C005AB9AA /* MockRootPresenter.swift */; };
 		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
 		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
 		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		5877734326A852EE005AB9AA /* TutorialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
 		5877734826A85839005AB9AA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5877734D26A85F76005AB9AA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		5877736126A8636C005AB9AA /* MockRootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRootPresenter.swift; sourceTree = "<group>"; };
 		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,15 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		5877735A26A86355005AB9AA /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */,
+				5877736126A8636C005AB9AA /* MockRootPresenter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		589C025626A5E38100466D2E = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +195,7 @@
 			children = (
 				589C027926A5E38200466D2E /* NeddleDITestTests.swift */,
 				580E4E6026A757710066F7C8 /* Mocks */,
-				580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */,
+				5877735A26A86355005AB9AA /* Root */,
 				589C027B26A5E38200466D2E /* Info.plist */,
 			);
 			path = NeddleDITestTests;
@@ -552,6 +563,7 @@
 				580E4E5C26A756870066F7C8 /* RootViewControllerTests.swift in Sources */,
 				580E4E6226A757880066F7C8 /* MockUserAccountProvider.swift in Sources */,
 				580E4E6F26A846920066F7C8 /* MockLoginComponent.swift in Sources */,
+				5877736226A8636C005AB9AA /* MockRootPresenter.swift in Sources */,
 				589C027A26A5E38200466D2E /* NeddleDITestTests.swift in Sources */,
 				580E4E7426A846F00066F7C8 /* MockHomeComponent.swift in Sources */,
 				580E4E6A26A758790066F7C8 /* MockTutorialComponent.swift in Sources */,
