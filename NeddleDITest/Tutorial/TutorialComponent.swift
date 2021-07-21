@@ -8,7 +8,7 @@
 import NeedleFoundation
 
 protocol TutorialComponentProtocol {
-    var tutorialViewController: TutorialViewController { get }
+    var tutorialViewController: UIViewController { get }
 }
 
 protocol TutorialDependency: Dependency {
@@ -16,7 +16,7 @@ protocol TutorialDependency: Dependency {
 }
 
 final class TutorialComponent: Component<TutorialDependency>, TutorialComponentProtocol {
-    var tutorialViewController: TutorialViewController {
+    var tutorialViewController: UIViewController {
         return TutorialViewController(
             homeComponent: homeComponent,
             accountProvider: dependency.accountProvider

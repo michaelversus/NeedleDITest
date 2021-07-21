@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		351276E17DD1D44DAB5F4DA2 /* Pods_NeddleDITest_NeddleDITestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FA5C0AC501B163DF6F3E6D /* Pods_NeddleDITest_NeddleDITestUITests.framework */; };
+		580E4E5C26A756870066F7C8 /* RootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */; };
+		580E4E6226A757880066F7C8 /* MockUserAccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */; };
+		580E4E6A26A758790066F7C8 /* MockTutorialComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */; };
 		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
 		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
 		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3E1C19796EF0A245AC9315 /* Pods-NeddleDITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITestTests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITestTests/Pods-NeddleDITestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		481DD546178F2AC2A6A8AE6C /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig"; path = "Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerTests.swift; sourceTree = "<group>"; };
+		580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserAccountProvider.swift; sourceTree = "<group>"; };
+		580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTutorialComponent.swift; sourceTree = "<group>"; };
 		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580E4E6026A757710066F7C8 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				580E4E6126A757880066F7C8 /* MockUserAccountProvider.swift */,
+				580E4E6926A758790066F7C8 /* MockTutorialComponent.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		589C025626A5E38100466D2E = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				589C027926A5E38200466D2E /* NeddleDITestTests.swift */,
+				580E4E6026A757710066F7C8 /* Mocks */,
+				580E4E5B26A756870066F7C8 /* RootViewControllerTests.swift */,
 				589C027B26A5E38200466D2E /* Info.plist */,
 			);
 			path = NeddleDITestTests;
@@ -510,7 +527,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580E4E5C26A756870066F7C8 /* RootViewControllerTests.swift in Sources */,
+				580E4E6226A757880066F7C8 /* MockUserAccountProvider.swift in Sources */,
 				589C027A26A5E38200466D2E /* NeddleDITestTests.swift in Sources */,
+				580E4E6A26A758790066F7C8 /* MockTutorialComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
