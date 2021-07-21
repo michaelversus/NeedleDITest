@@ -16,6 +16,7 @@
 		580E4E8226A84AF10066F7C8 /* RootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580E4E8126A84AF10066F7C8 /* RootPresenter.swift */; };
 		5877734426A852EE005AB9AA /* TutorialPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734326A852EE005AB9AA /* TutorialPresenter.swift */; };
 		5877734926A85839005AB9AA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734826A85839005AB9AA /* LoginPresenter.swift */; };
+		5877734E26A85F76005AB9AA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734D26A85F76005AB9AA /* HomePresenter.swift */; };
 		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
 		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
 		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		580E4E8126A84AF10066F7C8 /* RootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPresenter.swift; sourceTree = "<group>"; };
 		5877734326A852EE005AB9AA /* TutorialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
 		5877734826A85839005AB9AA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5877734D26A85F76005AB9AA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				589C02E426A5EE6C00466D2E /* HomeComponent.swift */,
+				5877734D26A85F76005AB9AA /* HomePresenter.swift */,
 				589C02EE26A5EED000466D2E /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -533,6 +536,7 @@
 				589C026326A5E38100466D2E /* AppDelegate.swift in Sources */,
 				589C02B926A5E99700466D2E /* RootComponent.swift in Sources */,
 				589C02EF26A5EED000466D2E /* HomeViewController.swift in Sources */,
+				5877734E26A85F76005AB9AA /* HomePresenter.swift in Sources */,
 				5877734426A852EE005AB9AA /* TutorialPresenter.swift in Sources */,
 				589C02FA26A5F87200466D2E /* UserDefaults+Extension.swift in Sources */,
 				589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */,

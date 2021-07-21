@@ -16,7 +16,11 @@ protocol HomeDependency: Dependency {
 }
 
 final class HomeComponent: Component<HomeDependency>, HomeComponentProtocol {
+    var homePresenter: HomePresenterProtocol {
+        return HomePresenter(accountProvider: dependency.accountProvider)
+    }
+    
     var homeViewController: UIViewController {
-        return HomeViewController(accountProvider: dependency.accountProvider)
+        return HomeViewController(presenter: homePresenter)
     }
 }

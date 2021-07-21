@@ -11,7 +11,6 @@ import XCTest
 class RootViewControllerTests: XCTestCase {
     
     private var rootViewController: RootViewController!
-    private var accountProvider: MockUserAccountProvider!
     private var tutorialComponent: MockTutorialComponent!
     private var loginComponent: MockLoginComponent!
     private var homeComponent: MockHomeComponent!
@@ -22,7 +21,7 @@ class RootViewControllerTests: XCTestCase {
         loginComponent = MockLoginComponent()
         homeComponent = MockHomeComponent()
         rootViewController = RootViewController(
-            accountProvider: accountProvider,
+            presenter: accountProvider,
             tutorialComponent: tutorialComponent,
             loginComponent: loginComponent,
             homeComponent: homeComponent

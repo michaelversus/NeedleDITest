@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol HomeViewControllerProtocol: AnyObject {
+    func configureButton(title: String)
+    func configureLabel(text: String)
+    func popToRoot()
+}
+
 final class HomeViewController: UIViewController {
     
-    private let accountProvider: UserAccountProviderProtocol
+    private let presenter: HomePresenterProtocol
     
     private let label: UILabel = {
         let lbl = UILabel()
@@ -18,8 +24,8 @@ final class HomeViewController: UIViewController {
         return lbl
     }()
     
-    required init(accountProvider: UserAccountProviderProtocol) {
-        self.accountProvider = accountProvider
+    required init(presenter: HomePresenterProtocol) {
+        self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -29,8 +35,32 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.attach(self)
         setupUI()
-        configureUI()
+        presenter.initialLoad()
+    }
+}
+
+extension HomeViewController: HomeViewControllerProtocol {
+    func configureButton(title: String) {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Logout",
+            style: .plain,
+            target: self,
+            action: #selector(handleLogout)
+        )
+    }
+    
+    func configureLabel(text: String) {
+        label.text = text
+    }
+    
+    @objc func handleLogout() {
+        presenter.logout()
+    }
+    
+    func popToRoot() {
+        navigationController?.popToRootViewController(animated: true)
     }
 }
 
@@ -39,29 +69,11 @@ fileprivate extension HomeViewController {
         view.backgroundColor = .white
         view.addSubview(label)
         navigationItem.setHidesBackButton(true, animated: true)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Logout",
-            style: .plain,
-            target: self,
-            action: #selector(logout)
-        )
+        
         NSLayoutConstraint.activate([
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
         ])
-    }
-    
-    func configureUI() {
-        if let account = try? accountProvider.loadAccount() {
-            label.text = "Welcome \(account.username)"
-        } else {
-            label.text = "Something went wrong"
-        }
-    }
-    
-    @objc func logout() {
-        accountProvider.reset()
-        navigationController?.popToRootViewController(animated: true)
     }
 }
