@@ -1,5 +1,6 @@
 
 
+import FourSquareClient
 import NeedleFoundation
 
 // swiftlint:disable unused_declaration
@@ -34,6 +35,9 @@ public func registerProviderFactories() {
 private class HomeDependency2a4eb76995aae72c3da2BaseProvider: HomeDependency {
     var accountProvider: UserAccountProvider {
         return rootComponent.accountProvider
+    }
+    var foursquareAPI: FoursquareAPIProtocol.Type {
+        return rootComponent.foursquareAPI
     }
     private let rootComponent: RootComponent
     init(rootComponent: RootComponent) {

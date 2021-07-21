@@ -48,6 +48,26 @@
                ReferencedContainer = "container:NeddleDITest.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5877737226A87E48005AB9AA"
+               BuildableName = "SimpleNetworkingTests.xctest"
+               BlueprintName = "SimpleNetworkingTests"
+               ReferencedContainer = "container:NeddleDITest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5877739F26A882BC005AB9AA"
+               BuildableName = "FourSquareClientTests.xctest"
+               BlueprintName = "FourSquareClientTests"
+               ReferencedContainer = "container:NeddleDITest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

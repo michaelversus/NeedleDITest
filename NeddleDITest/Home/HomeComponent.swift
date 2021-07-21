@@ -6,6 +6,7 @@
 //
 
 import NeedleFoundation
+import FourSquareClient
 
 protocol HomeComponentProtocol {
     var homeViewController: UIViewController { get }
@@ -13,11 +14,12 @@ protocol HomeComponentProtocol {
 
 protocol HomeDependency: Dependency {
     var accountProvider: UserAccountProvider { get }
+    var foursquareAPI: FoursquareAPIProtocol.Type { get }
 }
 
 final class HomeComponent: Component<HomeDependency>, HomeComponentProtocol {
     var homePresenter: HomePresenterProtocol {
-        return HomePresenter(accountProvider: dependency.accountProvider)
+        return HomePresenter(dependency: dependency)
     }
     
     var homeViewController: UIViewController {

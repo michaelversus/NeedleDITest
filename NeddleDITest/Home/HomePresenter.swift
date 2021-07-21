@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FourSquareClient
 
 protocol HomePresenterProtocol {
     func attach(_ view: HomeViewControllerProtocol)
@@ -16,10 +17,10 @@ protocol HomePresenterProtocol {
 final class HomePresenter: HomePresenterProtocol {
     
     weak private var view: HomeViewControllerProtocol?
-    private let accountProvider: UserAccountProviderProtocol
+    private let dependency: HomeDependency
     
-    init(accountProvider: UserAccountProviderProtocol) {
-        self.accountProvider = accountProvider
+    init(dependency: HomeDependency) {
+        self.dependency = dependency
     }
     
     func attach(_ view: HomeViewControllerProtocol) {
@@ -28,15 +29,31 @@ final class HomePresenter: HomePresenterProtocol {
     }
     
     func initialLoad() {
-        if let account = try? accountProvider.loadAccount() {
+        if let account = try? dependency.accountProvider.loadAccount() {
             view?.configureLabel(text: "Welcome \(account.username)")
         } else {
             view?.configureLabel(text: "Something went wrong")
         }
+        let venuesRequest = VenuesExploreRequest(
+            date: 20180323,
+            lat: 40.7243,
+            lon: -74.0018,
+            category: "coffee",
+            limit: 1
+        )
+        let venuesEndpoint = dependency.foursquareAPI.venues(request: venuesRequest)
+        URLSession.shared.load(venuesEndpoint) { result in
+            switch result {
+            case .success(let response):
+                dump(response)
+            case .failure(let error):
+                dump(error)
+            }
+        }
     }
     
     func logout() {
-        accountProvider.reset()
+        dependency.accountProvider.reset()
         view?.popToRoot()
     }
 }

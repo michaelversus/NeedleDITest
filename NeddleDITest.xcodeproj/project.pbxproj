@@ -18,6 +18,20 @@
 		5877734926A85839005AB9AA /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734826A85839005AB9AA /* LoginPresenter.swift */; };
 		5877734E26A85F76005AB9AA /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877734D26A85F76005AB9AA /* HomePresenter.swift */; };
 		5877736226A8636C005AB9AA /* MockRootPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877736126A8636C005AB9AA /* MockRootPresenter.swift */; };
+		5877737426A87E48005AB9AA /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */; };
+		5877737B26A87E48005AB9AA /* SimpleNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877737A26A87E48005AB9AA /* SimpleNetworkingTests.swift */; };
+		5877737D26A87E48005AB9AA /* SimpleNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 5877736D26A87E48005AB9AA /* SimpleNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5877738026A87E48005AB9AA /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */; };
+		5877738126A87E48005AB9AA /* SimpleNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		587773A126A882BC005AB9AA /* FourSquareClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5877739826A882BC005AB9AA /* FourSquareClient.framework */; };
+		587773A826A882BC005AB9AA /* FourSquareClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587773A726A882BC005AB9AA /* FourSquareClientTests.swift */; };
+		587773AA26A882BC005AB9AA /* FourSquareClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 5877739A26A882BC005AB9AA /* FourSquareClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		587773AD26A882BC005AB9AA /* FourSquareClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5877739826A882BC005AB9AA /* FourSquareClient.framework */; };
+		587773AE26A882BC005AB9AA /* FourSquareClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5877739826A882BC005AB9AA /* FourSquareClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		587773BC26A882CE005AB9AA /* FourSquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587773BB26A882CE005AB9AA /* FourSquareClient.swift */; };
+		587773C326A88D43005AB9AA /* SimpleNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */; };
+		587773C426A88D43005AB9AA /* SimpleNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		587773CD26A88D7C005AB9AA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5877738D26A87ED1005AB9AA /* Endpoint.swift */; };
 		589C026326A5E38100466D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026226A5E38100466D2E /* AppDelegate.swift */; };
 		589C026526A5E38100466D2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589C026426A5E38100466D2E /* SceneDelegate.swift */; };
 		589C026C26A5E38200466D2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589C026B26A5E38200466D2E /* Assets.xcassets */; };
@@ -40,6 +54,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5877737526A87E48005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5877736A26A87E48005AB9AA;
+			remoteInfo = SimpleNetworking;
+		};
+		5877737726A87E48005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589C025E26A5E38100466D2E;
+			remoteInfo = NeddleDITest;
+		};
+		5877737E26A87E48005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5877736A26A87E48005AB9AA;
+			remoteInfo = SimpleNetworking;
+		};
+		587773A226A882BC005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5877739726A882BC005AB9AA;
+			remoteInfo = FourSquareClient;
+		};
+		587773A426A882BC005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589C025E26A5E38100466D2E;
+			remoteInfo = NeddleDITest;
+		};
+		587773AB26A882BC005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5877739726A882BC005AB9AA;
+			remoteInfo = FourSquareClient;
+		};
+		587773C526A88D43005AB9AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589C025726A5E38100466D2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5877736A26A87E48005AB9AA;
+			remoteInfo = SimpleNetworking;
+		};
 		589C027626A5E38200466D2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 589C025726A5E38100466D2E /* Project object */;
@@ -56,6 +119,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5877738226A87E48005AB9AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				587773AE26A882BC005AB9AA /* FourSquareClient.framework in Embed Frameworks */,
+				5877738126A87E48005AB9AA /* SimpleNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		587773C726A88D43005AB9AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				587773C426A88D43005AB9AA /* SimpleNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITest-NeddleDITestUITests/Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3E1C19796EF0A245AC9315 /* Pods-NeddleDITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeddleDITestTests.debug.xcconfig"; path = "Target Support Files/Pods-NeddleDITestTests/Pods-NeddleDITestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +159,20 @@
 		5877734826A85839005AB9AA /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5877734D26A85F76005AB9AA /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		5877736126A8636C005AB9AA /* MockRootPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRootPresenter.swift; sourceTree = "<group>"; };
+		5877736B26A87E48005AB9AA /* SimpleNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5877736D26A87E48005AB9AA /* SimpleNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNetworking.h; sourceTree = "<group>"; };
+		5877736E26A87E48005AB9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5877737326A87E48005AB9AA /* SimpleNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5877737A26A87E48005AB9AA /* SimpleNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNetworkingTests.swift; sourceTree = "<group>"; };
+		5877737C26A87E48005AB9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5877738D26A87ED1005AB9AA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		5877739826A882BC005AB9AA /* FourSquareClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FourSquareClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5877739A26A882BC005AB9AA /* FourSquareClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourSquareClient.h; sourceTree = "<group>"; };
+		5877739B26A882BC005AB9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587773A026A882BC005AB9AA /* FourSquareClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourSquareClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		587773A726A882BC005AB9AA /* FourSquareClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClientTests.swift; sourceTree = "<group>"; };
+		587773A926A882BC005AB9AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587773BB26A882CE005AB9AA /* FourSquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClient.swift; sourceTree = "<group>"; };
 		589C025F26A5E38100466D2E /* NeddleDITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeddleDITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589C026226A5E38100466D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		589C026426A5E38100466D2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +205,43 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5877736826A87E48005AB9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877737026A87E48005AB9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5877737426A87E48005AB9AA /* SimpleNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739526A882BC005AB9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773C326A88D43005AB9AA /* SimpleNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739D26A882BC005AB9AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773A126A882BC005AB9AA /* FourSquareClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		589C025C26A5E38100466D2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5877738026A87E48005AB9AA /* SimpleNetworking.framework in Frameworks */,
+				587773AD26A882BC005AB9AA /* FourSquareClient.framework in Frameworks */,
 				D7108AEDF76B1248C4F7F0E7 /* Pods_NeddleDITest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,12 +285,54 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		5877736C26A87E48005AB9AA /* SimpleNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5877736D26A87E48005AB9AA /* SimpleNetworking.h */,
+				5877738D26A87ED1005AB9AA /* Endpoint.swift */,
+				5877736E26A87E48005AB9AA /* Info.plist */,
+			);
+			path = SimpleNetworking;
+			sourceTree = "<group>";
+		};
+		5877737926A87E48005AB9AA /* SimpleNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				5877737A26A87E48005AB9AA /* SimpleNetworkingTests.swift */,
+				5877737C26A87E48005AB9AA /* Info.plist */,
+			);
+			path = SimpleNetworkingTests;
+			sourceTree = "<group>";
+		};
+		5877739926A882BC005AB9AA /* FourSquareClient */ = {
+			isa = PBXGroup;
+			children = (
+				5877739A26A882BC005AB9AA /* FourSquareClient.h */,
+				587773BB26A882CE005AB9AA /* FourSquareClient.swift */,
+				5877739B26A882BC005AB9AA /* Info.plist */,
+			);
+			path = FourSquareClient;
+			sourceTree = "<group>";
+		};
+		587773A626A882BC005AB9AA /* FourSquareClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				587773A726A882BC005AB9AA /* FourSquareClientTests.swift */,
+				587773A926A882BC005AB9AA /* Info.plist */,
+			);
+			path = FourSquareClientTests;
+			sourceTree = "<group>";
+		};
 		589C025626A5E38100466D2E = {
 			isa = PBXGroup;
 			children = (
 				589C026126A5E38100466D2E /* NeddleDITest */,
 				589C027826A5E38200466D2E /* NeddleDITestTests */,
 				589C028326A5E38200466D2E /* NeddleDITestUITests */,
+				5877736C26A87E48005AB9AA /* SimpleNetworking */,
+				5877737926A87E48005AB9AA /* SimpleNetworkingTests */,
+				5877739926A882BC005AB9AA /* FourSquareClient */,
+				587773A626A882BC005AB9AA /* FourSquareClientTests */,
 				589C026026A5E38100466D2E /* Products */,
 				F671C16FB8FAEF28DF2C25B9 /* Pods */,
 				E2737F4D7FE7EBD91E302633 /* Frameworks */,
@@ -167,6 +345,10 @@
 				589C025F26A5E38100466D2E /* NeddleDITest.app */,
 				589C027526A5E38200466D2E /* NeddleDITestTests.xctest */,
 				589C028026A5E38200466D2E /* NeddleDITestUITests.xctest */,
+				5877736B26A87E48005AB9AA /* SimpleNetworking.framework */,
+				5877737326A87E48005AB9AA /* SimpleNetworkingTests.xctest */,
+				5877739826A882BC005AB9AA /* FourSquareClient.framework */,
+				587773A026A882BC005AB9AA /* FourSquareClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,7 +465,102 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5877736626A87E48005AB9AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5877737D26A87E48005AB9AA /* SimpleNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739326A882BC005AB9AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773AA26A882BC005AB9AA /* FourSquareClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		5877736A26A87E48005AB9AA /* SimpleNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5877738726A87E48005AB9AA /* Build configuration list for PBXNativeTarget "SimpleNetworking" */;
+			buildPhases = (
+				5877736626A87E48005AB9AA /* Headers */,
+				5877736726A87E48005AB9AA /* Sources */,
+				5877736826A87E48005AB9AA /* Frameworks */,
+				5877736926A87E48005AB9AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleNetworking;
+			productName = SimpleNetworking;
+			productReference = 5877736B26A87E48005AB9AA /* SimpleNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5877737226A87E48005AB9AA /* SimpleNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5877738826A87E48005AB9AA /* Build configuration list for PBXNativeTarget "SimpleNetworkingTests" */;
+			buildPhases = (
+				5877736F26A87E48005AB9AA /* Sources */,
+				5877737026A87E48005AB9AA /* Frameworks */,
+				5877737126A87E48005AB9AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5877737626A87E48005AB9AA /* PBXTargetDependency */,
+				5877737826A87E48005AB9AA /* PBXTargetDependency */,
+			);
+			name = SimpleNetworkingTests;
+			productName = SimpleNetworkingTests;
+			productReference = 5877737326A87E48005AB9AA /* SimpleNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5877739726A882BC005AB9AA /* FourSquareClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587773AF26A882BC005AB9AA /* Build configuration list for PBXNativeTarget "FourSquareClient" */;
+			buildPhases = (
+				5877739326A882BC005AB9AA /* Headers */,
+				5877739426A882BC005AB9AA /* Sources */,
+				5877739526A882BC005AB9AA /* Frameworks */,
+				5877739626A882BC005AB9AA /* Resources */,
+				587773C726A88D43005AB9AA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				587773C626A88D43005AB9AA /* PBXTargetDependency */,
+			);
+			name = FourSquareClient;
+			productName = FourSquareClient;
+			productReference = 5877739826A882BC005AB9AA /* FourSquareClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5877739F26A882BC005AB9AA /* FourSquareClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587773B226A882BC005AB9AA /* Build configuration list for PBXNativeTarget "FourSquareClientTests" */;
+			buildPhases = (
+				5877739C26A882BC005AB9AA /* Sources */,
+				5877739D26A882BC005AB9AA /* Frameworks */,
+				5877739E26A882BC005AB9AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				587773A326A882BC005AB9AA /* PBXTargetDependency */,
+				587773A526A882BC005AB9AA /* PBXTargetDependency */,
+			);
+			name = FourSquareClientTests;
+			productName = FourSquareClientTests;
+			productReference = 587773A026A882BC005AB9AA /* FourSquareClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		589C025E26A5E38100466D2E /* NeddleDITest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589C028926A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITest" */;
@@ -294,10 +571,13 @@
 				589C025C26A5E38100466D2E /* Frameworks */,
 				589C025D26A5E38100466D2E /* Resources */,
 				EA58863328B7B20D30FC219E /* [CP] Embed Pods Frameworks */,
+				5877738226A87E48005AB9AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5877737F26A87E48005AB9AA /* PBXTargetDependency */,
+				587773AC26A882BC005AB9AA /* PBXTargetDependency */,
 			);
 			name = NeddleDITest;
 			productName = NeddleDITest;
@@ -352,6 +632,21 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					5877736A26A87E48005AB9AA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5877737226A87E48005AB9AA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 589C025E26A5E38100466D2E;
+					};
+					5877739726A882BC005AB9AA = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					5877739F26A882BC005AB9AA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 589C025E26A5E38100466D2E;
+					};
 					589C025E26A5E38100466D2E = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -381,11 +676,43 @@
 				589C025E26A5E38100466D2E /* NeddleDITest */,
 				589C027426A5E38200466D2E /* NeddleDITestTests */,
 				589C027F26A5E38200466D2E /* NeddleDITestUITests */,
+				5877736A26A87E48005AB9AA /* SimpleNetworking */,
+				5877737226A87E48005AB9AA /* SimpleNetworkingTests */,
+				5877739726A882BC005AB9AA /* FourSquareClient */,
+				5877739F26A882BC005AB9AA /* FourSquareClientTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5877736926A87E48005AB9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877737126A87E48005AB9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739626A882BC005AB9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739E26A882BC005AB9AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		589C025D26A5E38100466D2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -532,6 +859,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5877736726A87E48005AB9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773CD26A88D7C005AB9AA /* Endpoint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877736F26A87E48005AB9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5877737B26A87E48005AB9AA /* SimpleNetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739426A882BC005AB9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773BC26A882CE005AB9AA /* FourSquareClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5877739C26A882BC005AB9AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				587773A826A882BC005AB9AA /* FourSquareClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		589C025B26A5E38100466D2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,6 +940,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5877737626A87E48005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5877736A26A87E48005AB9AA /* SimpleNetworking */;
+			targetProxy = 5877737526A87E48005AB9AA /* PBXContainerItemProxy */;
+		};
+		5877737826A87E48005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589C025E26A5E38100466D2E /* NeddleDITest */;
+			targetProxy = 5877737726A87E48005AB9AA /* PBXContainerItemProxy */;
+		};
+		5877737F26A87E48005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5877736A26A87E48005AB9AA /* SimpleNetworking */;
+			targetProxy = 5877737E26A87E48005AB9AA /* PBXContainerItemProxy */;
+		};
+		587773A326A882BC005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5877739726A882BC005AB9AA /* FourSquareClient */;
+			targetProxy = 587773A226A882BC005AB9AA /* PBXContainerItemProxy */;
+		};
+		587773A526A882BC005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589C025E26A5E38100466D2E /* NeddleDITest */;
+			targetProxy = 587773A426A882BC005AB9AA /* PBXContainerItemProxy */;
+		};
+		587773AC26A882BC005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5877739726A882BC005AB9AA /* FourSquareClient */;
+			targetProxy = 587773AB26A882BC005AB9AA /* PBXContainerItemProxy */;
+		};
+		587773C626A88D43005AB9AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5877736A26A87E48005AB9AA /* SimpleNetworking */;
+			targetProxy = 587773C526A88D43005AB9AA /* PBXContainerItemProxy */;
+		};
 		589C027726A5E38200466D2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 589C025E26A5E38100466D2E /* NeddleDITest */;
@@ -605,6 +999,197 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5877738326A87E48005AB9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.SimpleNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5877738426A87E48005AB9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SimpleNetworking/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.SimpleNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5877738526A87E48005AB9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.SimpleNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Debug;
+		};
+		5877738626A87E48005AB9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = SimpleNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.SimpleNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Release;
+		};
+		587773B026A882BC005AB9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FourSquareClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.FourSquareClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		587773B126A882BC005AB9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FourSquareClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.FourSquareClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		587773B326A882BC005AB9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = FourSquareClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.FourSquareClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Debug;
+		};
+		587773B426A882BC005AB9AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4N99UJ999D;
+				INFOPLIST_FILE = FourSquareClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.mikdev.FourSquareClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeddleDITest.app/NeddleDITest";
+			};
+			name = Release;
+		};
 		589C028726A5E38200466D2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,6 +1310,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82BDBF36B87B30D36783D4FA /* Pods-NeddleDITest.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -745,6 +1331,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2E02689F87E53C516945EA7 /* Pods-NeddleDITest.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -852,6 +1439,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5877738726A87E48005AB9AA /* Build configuration list for PBXNativeTarget "SimpleNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5877738326A87E48005AB9AA /* Debug */,
+				5877738426A87E48005AB9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5877738826A87E48005AB9AA /* Build configuration list for PBXNativeTarget "SimpleNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5877738526A87E48005AB9AA /* Debug */,
+				5877738626A87E48005AB9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587773AF26A882BC005AB9AA /* Build configuration list for PBXNativeTarget "FourSquareClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587773B026A882BC005AB9AA /* Debug */,
+				587773B126A882BC005AB9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587773B226A882BC005AB9AA /* Build configuration list for PBXNativeTarget "FourSquareClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				587773B326A882BC005AB9AA /* Debug */,
+				587773B426A882BC005AB9AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		589C025A26A5E38100466D2E /* Build configuration list for PBXProject "NeddleDITest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

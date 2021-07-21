@@ -6,6 +6,7 @@
 //
 
 import NeedleFoundation
+import FourSquareClient
 
 final class RootComponent: BootstrapComponent {
     var userDefaults: UserDefaults {
@@ -14,6 +15,10 @@ final class RootComponent: BootstrapComponent {
     
     var accountProvider: UserAccountProvider {
         return shared { UserAccountProvider(userDefaults: userDefaults) }
+    }
+    
+    var foursquareAPI: FoursquareAPIProtocol.Type {
+        return shared { FoursquareAPI.self }
     }
     
     var rootPresenter: RootPresenterProtocol {
