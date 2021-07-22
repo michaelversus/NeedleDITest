@@ -12,7 +12,7 @@ protocol TutorialComponentProtocol {
 }
 
 protocol TutorialDependency: Dependency {
-    var accountProvider: UserAccountProvider { get }
+    var accountProvider: UserAccountProviderProtocol { get }
 }
 
 final class TutorialComponent: Component<TutorialDependency>, TutorialComponentProtocol {

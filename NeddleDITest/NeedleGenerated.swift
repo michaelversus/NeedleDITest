@@ -34,7 +34,7 @@ public func registerProviderFactories() {
 // MARK: - Providers
 
 private class HomeDependency2a4eb76995aae72c3da2BaseProvider: HomeDependency {
-    var accountProvider: UserAccountProvider {
+    var accountProvider: UserAccountProviderProtocol {
         return rootComponent.accountProvider
     }
     var foursquareAPI: FoursquareAPIProtocol.Type {
@@ -67,7 +67,7 @@ private class HomeDependency4a9921148535292cc850Provider: HomeDependency2a4eb769
     }
 }
 private class TutorialDependency19c753ad7652771a25b7BaseProvider: TutorialDependency {
-    var accountProvider: UserAccountProvider {
+    var accountProvider: UserAccountProviderProtocol {
         return rootComponent.accountProvider
     }
     private let rootComponent: RootComponent
@@ -82,7 +82,7 @@ private class TutorialDependency19c753ad7652771a25b7Provider: TutorialDependency
     }
 }
 private class LoginDependency006c7d880fec28863ecaBaseProvider: LoginDependency {
-    var accountProvider: UserAccountProvider {
+    var accountProvider: UserAccountProviderProtocol {
         return rootComponent.accountProvider
     }
     private let rootComponent: RootComponent

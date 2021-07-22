@@ -14,7 +14,7 @@ final class RootComponent: BootstrapComponent {
         return UserDefaults.standard
     }
     
-    var accountProvider: UserAccountProvider {
+    var accountProvider: UserAccountProviderProtocol {
         return shared { UserAccountProvider(userDefaults: userDefaults) }
     }
     

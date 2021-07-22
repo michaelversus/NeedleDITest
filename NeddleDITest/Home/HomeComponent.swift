@@ -14,7 +14,7 @@ protocol HomeComponentProtocol {
 }
 
 protocol HomeDependency: Dependency {
-    var accountProvider: UserAccountProvider { get }
+    var accountProvider: UserAccountProviderProtocol { get }
     var foursquareAPI: FoursquareAPIProtocol.Type { get }
     var urlSession: URLSessionProtocol { get }
 }

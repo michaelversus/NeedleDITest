@@ -12,7 +12,7 @@ protocol LoginComponentProtocol {
 }
 
 protocol LoginDependency: Dependency {
-    var accountProvider: UserAccountProvider { get }
+    var accountProvider: UserAccountProviderProtocol { get }
 }
 
 final class LoginComponent: Component<LoginDependency>, LoginComponentProtocol {
