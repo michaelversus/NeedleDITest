@@ -251,7 +251,13 @@ public struct WrongStatusCodeError: Error {
     }
 }
 
-extension URLSession {
+public protocol URLSessionProtocol {
+    func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+    @discardableResult
+    func load<A>(_ e: Endpoint<A>, onComplete: @escaping (Result<A, Error>) -> ()) -> URLSessionDataTask
+}
+
+extension URLSessionProtocol {
     @discardableResult
     /// Loads an endpoint by creating (and directly resuming) a data task.
     ///
@@ -283,3 +289,5 @@ extension URLSession {
         return task
     }
 }
+
+extension URLSession: URLSessionProtocol {}

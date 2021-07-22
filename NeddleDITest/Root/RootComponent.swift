@@ -7,6 +7,7 @@
 
 import NeedleFoundation
 import FourSquareClient
+import SimpleNetworking
 
 final class RootComponent: BootstrapComponent {
     var userDefaults: UserDefaults {
@@ -19,6 +20,10 @@ final class RootComponent: BootstrapComponent {
     
     var foursquareAPI: FoursquareAPIProtocol.Type {
         return shared { FoursquareAPI.self }
+    }
+
+    var urlSession: URLSessionProtocol {
+        return shared { URLSession.shared }
     }
     
     var rootPresenter: RootPresenterProtocol {

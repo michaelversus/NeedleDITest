@@ -42,7 +42,7 @@ final class HomePresenter: HomePresenterProtocol {
             limit: 1
         )
         let venuesEndpoint = dependency.foursquareAPI.venues(request: venuesRequest)
-        URLSession.shared.load(venuesEndpoint) { result in
+        dependency.urlSession.load(venuesEndpoint) { result in
             switch result {
             case .success(let response):
                 dump(response)

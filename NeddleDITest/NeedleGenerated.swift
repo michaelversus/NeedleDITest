@@ -2,6 +2,7 @@
 
 import FourSquareClient
 import NeedleFoundation
+import SimpleNetworking
 
 // swiftlint:disable unused_declaration
 private let needleDependenciesHash : String? = nil
@@ -38,6 +39,9 @@ private class HomeDependency2a4eb76995aae72c3da2BaseProvider: HomeDependency {
     }
     var foursquareAPI: FoursquareAPIProtocol.Type {
         return rootComponent.foursquareAPI
+    }
+    var urlSession: URLSessionProtocol {
+        return rootComponent.urlSession
     }
     private let rootComponent: RootComponent
     init(rootComponent: RootComponent) {
