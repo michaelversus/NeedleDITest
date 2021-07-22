@@ -815,7 +815,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export SOURCEKIT_LOGGING=0 && /usr/local/Cellar/needle/0.17.2/bin/needle generate $SRCROOT/$TARGETNAME/NeedleGenerated.swift $SRCROOT/$TARGETNAME\n";
+			shellScript = "export SOURCEKIT_LOGGING=0 && needle generate $SRCROOT/$TARGETNAME/NeedleGenerated.swift $SRCROOT/$TARGETNAME\n";
 		};
 		BA1DD65CDC76177D5FCCC286 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
