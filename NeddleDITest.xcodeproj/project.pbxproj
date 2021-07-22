@@ -565,8 +565,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589C028926A5E38200466D2E /* Build configuration list for PBXNativeTarget "NeddleDITest" */;
 			buildPhases = (
-				589C029C26A5E5BF00466D2E /* ShellScript */,
 				581B1166F4CF1FBE586141B8 /* [CP] Check Pods Manifest.lock */,
+				589C029C26A5E5BF00466D2E /* ShellScript */,
 				589C025B26A5E38100466D2E /* Sources */,
 				589C025C26A5E38100466D2E /* Frameworks */,
 				589C025D26A5E38100466D2E /* Resources */,
@@ -1310,7 +1310,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82BDBF36B87B30D36783D4FA /* Pods-NeddleDITest.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1331,7 +1330,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2E02689F87E53C516945EA7 /* Pods-NeddleDITest.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -1398,7 +1396,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1559E1ABB54325C563D612E0 /* Pods-NeddleDITest-NeddleDITestUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N99UJ999D;
 				INFOPLIST_FILE = NeddleDITestUITests/Info.plist;
@@ -1419,7 +1416,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 481DD546178F2AC2A6A8AE6C /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4N99UJ999D;
 				INFOPLIST_FILE = NeddleDITestUITests/Info.plist;

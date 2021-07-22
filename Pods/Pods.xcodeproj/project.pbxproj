@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,7 @@
 /* Begin PBXFileReference section */
 		091A02767099B96FAE1899FFA232AA87 /* Pods-NeddleDITest-NeddleDITestUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeddleDITest-NeddleDITestUITests.modulemap"; sourceTree = "<group>"; };
 		12D6FC2D9B9E2504B6EF0A7D52F0C2C6 /* Pods-NeddleDITestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeddleDITestTests.debug.xcconfig"; sourceTree = "<group>"; };
-		135835CC9CF3025DC86D5FB6396126DF /* Pods_NeddleDITest_NeddleDITestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITest_NeddleDITestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		135835CC9CF3025DC86D5FB6396126DF /* Pods_NeddleDITest_NeddleDITestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NeddleDITest_NeddleDITestUITests.framework; path = "Pods-NeddleDITest-NeddleDITestUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5659B0ED9151ED6089BADFBF273057 /* NeedleFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeedleFoundation-prefix.pch"; sourceTree = "<group>"; };
 		202E31E2EA816598B5241BEFC17C41D3 /* Pods-NeddleDITestTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeddleDITestTests-dummy.m"; sourceTree = "<group>"; };
 		2134FD72F687E7074B6ED18E0CAA2467 /* Pods-NeddleDITestTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeddleDITestTests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		405C5F8DDD7E6DB6EA0A291AFF801C37 /* MockComponentPathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockComponentPathBuilder.swift; path = Sources/NeedleFoundationTest/MockComponentPathBuilder.swift; sourceTree = "<group>"; };
 		490EC7F03C9C9778CF6EC7FA26A71208 /* Pods-NeddleDITestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeddleDITestTests.release.xcconfig"; sourceTree = "<group>"; };
 		513BFDEB7F9A39CF09A89ABE54CB1444 /* Pods-NeddleDITest-NeddleDITestUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NeddleDITest-NeddleDITestUITests-frameworks.sh"; sourceTree = "<group>"; };
-		57474CBF008B886BB5B20E7FBCEFD240 /* NeedleFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NeedleFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57474CBF008B886BB5B20E7FBCEFD240 /* NeedleFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NeedleFoundation.framework; path = NeedleFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		577F2AED0803D163C09A09C69C509BA1 /* NeedleFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeedleFoundation-umbrella.h"; sourceTree = "<group>"; };
 		600152F370057C504842A39002E9D707 /* Pods-NeddleDITest-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeddleDITest-acknowledgements.markdown"; sourceTree = "<group>"; };
 		602B5503030389B557C9E232F7470564 /* Pods-NeddleDITest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NeddleDITest-umbrella.h"; sourceTree = "<group>"; };
@@ -72,11 +72,11 @@
 		61ADCC60951F6ED497167FDB436DD612 /* Pods-NeddleDITestTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NeddleDITestTests.modulemap"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		733687B8CE3303285948507CB494AF68 /* Pods-NeddleDITest-NeddleDITestUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeddleDITest-NeddleDITestUITests-dummy.m"; sourceTree = "<group>"; };
-		7DA686A6297B4C1B6039B3565A55E010 /* Pods_NeddleDITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA686A6297B4C1B6039B3565A55E010 /* Pods_NeddleDITestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NeddleDITestTests.framework; path = "Pods-NeddleDITestTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95116282F9524F6DC0671B04F2C5AE8F /* Pods-NeddleDITest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeddleDITest.release.xcconfig"; sourceTree = "<group>"; };
 		9A2AF3E8975CABB5389AB381FB45233C /* PluginizedComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginizedComponent.swift; path = Sources/NeedleFoundation/Pluginized/PluginizedComponent.swift; sourceTree = "<group>"; };
 		9D64457DD365EFFFCA68BB3DEA955643 /* NonCoreComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonCoreComponent.swift; path = Sources/NeedleFoundation/Pluginized/NonCoreComponent.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DEB120F660E4D2C3112E12B6C1A5471 /* Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeddleDITest-NeddleDITestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A10150169EE2CFD069AA9388E1BEBC75 /* Pods-NeddleDITest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NeddleDITest-dummy.m"; sourceTree = "<group>"; };
 		B13BDBE8F1411845E0B1CA4324F65205 /* Pods-NeddleDITest-NeddleDITestUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeddleDITest-NeddleDITestUITests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		E59B7E631217F60B970ECDD3EC0B8286 /* PluginExtensionProviderRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginExtensionProviderRegistry.swift; path = Sources/NeedleFoundation/Pluginized/Internal/PluginExtensionProviderRegistry.swift; sourceTree = "<group>"; };
 		E9F07AC4A0A4B553CA0AAA3EC558A18D /* Pods-NeddleDITest-NeddleDITestUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NeddleDITest-NeddleDITestUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ED54098A919248C0BA74CF5B5772AECF /* Pods-NeddleDITestTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NeddleDITestTests-Info.plist"; sourceTree = "<group>"; };
-		F105EF5270F48C7715B72ADBE0B51142 /* Pods_NeddleDITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeddleDITest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F105EF5270F48C7715B72ADBE0B51142 /* Pods_NeddleDITest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NeddleDITest.framework; path = "Pods-NeddleDITest.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22ECEDD5B00BF14A5D464B939133D95 /* Pods-NeddleDITest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NeddleDITest.debug.xcconfig"; sourceTree = "<group>"; };
 		F54FCF82486D6305BD23A23681756FCF /* Component.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Component.swift; path = Sources/NeedleFoundation/Component.swift; sourceTree = "<group>"; };
 		F570A959C140D3F942E2A3A701698A20 /* DependencyProviderRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyProviderRegistry.swift; path = Sources/NeedleFoundation/Internal/DependencyProviderRegistry.swift; sourceTree = "<group>"; };
@@ -167,6 +167,7 @@
 				C518877307F040B77BEC891BF5BD4403 /* PluginizedScopeLifecycle.swift */,
 				1132ECC3096BE566DE0D090BC190385E /* Support Files */,
 			);
+			name = NeedleFoundation;
 			path = NeedleFoundation;
 			sourceTree = "<group>";
 		};
@@ -396,10 +397,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -604,7 +605,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NeedleFoundation/NeedleFoundation-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -881,7 +882,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/NeedleFoundation/NeedleFoundation-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
